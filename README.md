@@ -1,8 +1,8 @@
-# Mail2DB: Sistema de Procesamiento Automatizado de Facturas
+# MailProcessor: Sistema de Procesamiento Automatizado de Facturas
 
 ## Resumen del Proyecto
 
-Mail2DB es un sistema de backend diseñado para automatizar por completo el ciclo de vida de las facturas recibidas por correo electrónico. El sistema monitorea una cuenta de correo, extrae y clasifica los documentos adjuntos (PDF y JSON), procesa los datos y los almacena de forma segura y transaccional en una base de datos PostgreSQL.
+MailProcessor es un sistema de backend diseñado para automatizar por completo el ciclo de vida de las facturas recibidas por correo electrónico. El sistema monitorea una cuenta de correo, extrae y clasifica los documentos adjuntos (PDF y JSON), procesa los datos y los almacena de forma segura y transaccional en una base de datos PostgreSQL.
 
 Este proyecto elimina la necesidad de entrada de datos manual, reduce errores y asegura la integridad de la información financiera mediante un sistema robusto de manejo de errores con rollbacks automáticos.
 
@@ -19,8 +19,8 @@ graph TD
     subgraph "Proceso 1: FetchEmails.js"
         B(1. Conectar a IMAP)
         C(2. Buscar Correos No Leídos)
-        D{3. ¿Adjuntos Válidos? <br/>(1 PDF + 1 JSON)}
-        E(4. Descargar en <br> INVOICES_PATH/empresa/fecha_uid/)
+        D{"3. ¿Adjuntos Válidos? <br>(1 PDF + 1 JSON)"}
+        E("4. Descargar en <br> INVOICES_PATH/empresa/fecha_uid/")
         F(5. Marcar Correo como Leído)
     end
 
