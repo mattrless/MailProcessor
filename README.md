@@ -64,7 +64,7 @@ graph TD
 
 ## Tecnologías Utilizadas
 
-*   **Lenguaje:** Node.js
+*   **Lenguaje:** Javascript (Node.js)
 *   **Gestor de Paquetes:** PNPM
 *   **Base de Datos:** PostgreSQL
 *   **Librerías Clave:** `node-imap`, `pg` (node-postgres)
