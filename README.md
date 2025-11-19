@@ -1,10 +1,12 @@
-# MailProcessor: Sistema de Procesamiento Automatizado de Facturas
+# MailProcessor: Sistema de Procesamiento Automatizado de Facturas (Portfolio Showcase)
 
 ## Resumen del Proyecto
 
 MailProcessor es un sistema de backend diseñado para automatizar por completo el ciclo de vida de las facturas recibidas por correo electrónico. El sistema monitorea una cuenta de correo, extrae y clasifica los documentos adjuntos (PDF y JSON), procesa los datos y los almacena de forma segura y transaccional en una base de datos PostgreSQL.
 
 Este proyecto elimina la necesidad de entrada de datos manual, reduce errores y asegura la integridad de la información financiera mediante un sistema robusto de manejo de errores con rollbacks automáticos.
+
+Por políticas de confidencialidad, el código de este proyecto no es público ya que fue desarrollado durante una pasantía.
 
 ## Visualización del Proceso
 
@@ -104,7 +106,3 @@ El sistema gestiona las facturas moviéndolas a través de diferentes estados re
             ├─── factura.json
             └─── factura.pdf
 ```
-
-## Nota sobre el Código Fuente
-
-Por políticas de confidencialidad, el código de este proyecto no es público ya que fue desarrollado durante una pasantía.
